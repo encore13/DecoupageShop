@@ -1,0 +1,374 @@
+@import url(https://fonts.googleapis.com/css?family=Parisienne);
+
+
+body{
+	background: #F0E9E3;
+}
+
+h1{	
+	font-family: Parisienne;
+	font-size: 35px;
+	background: #E1D7C7;
+	color: #8D7453;
+	margin: 25px 0px 0px 0px;
+	padding: 0;	
+}
+
+
+h2{
+	font-family: Parisienne;
+	font-size: 28px;
+	color: #8D7453;
+	text-align: center;
+	background: #E1D7C7;
+	padding: 10px;
+	margin: 0;
+}
+
+
+.slideshow{
+	position: relative;
+	width: 100%;
+	height: 400px;	
+}
+
+.slideshow figure{
+	margin: 0;
+	width: 100%;
+	height: 400px;
+	position: absolute;	
+}
+
+.slideshow img{
+	width: 100%;
+	height: 400px;
+	box-shadow: 0 0 2px;
+}
+
+figure:nth-child(1) {
+  animation: anim 48s 42s infinite;
+}
+figure:nth-child(2) {
+  animation: anim 48s 36s infinite;
+}
+figure:nth-child(3) {
+  animation: anim 48s 30s infinite;
+}
+figure:nth-child(4) {
+  animation: anim 48s 24s infinite;
+}
+figure:nth-child(5) {
+  animation: anim 48s 18s infinite;
+}
+figure:nth-child(6) {
+  animation: anim 48s 12s infinite;
+}
+figure:nth-child(7) {
+  animation: anim 48s 6s infinite;
+}
+figure:nth-child(8) {
+  animation: anim 48s 0s infinite;
+}
+
+
+@keyframes anim{
+  0%{
+    opacity: 1;
+  }
+  10.5% {
+    opacity: 1;
+  }
+  12.5%{
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.novosti{
+	color: #5d4c37;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	display: table;	
+	margin-top: 50px;
+}
+
+.novosti article{
+	width: 30%;
+	height: 60%;
+	float: left;
+	overflow: auto;
+	border: 5px ridge #8D7453;
+	text-align: center;
+	border-radius: 15px;
+	border-collapse: collapse;	
+}
+
+
+
+
+.novosti img{
+	height: 40%; 
+	width: 40%;
+	float: right;
+}
+
+.novosti img:hover{
+	height: 60%;
+	width: 60%;
+	
+}
+
+#meni {
+
+	background: #E1D7C7;
+	list-style-type: none;
+	display: table;	
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#meni li {
+	
+	font-family: Parisienne;
+	display: table-cell;
+	color: #8D7453;
+	text-align: center;
+}
+
+#meni li a {
+
+	text-decoration: none;
+	font-size: 25px;
+	color: #8D7453;
+
+}
+
+#meni a:visited {
+	color: #8D7453;
+
+}
+
+#meni li a:hover {
+	
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+#cjenovnik{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;	
+	border:2px solid #8D7453;
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+
+#cjenovnik th{
+	background: #8D7453;
+}
+
+#cjenovnik td{
+	
+	border:2px solid #8D7453;
+	text-align: center;
+	color: #28272E;
+}
+
+#cjenovnik tr:nth-child(odd){
+	background: #E1D7C7;
+}
+
+#cjenovnik tr:nth-child(even){
+	background: #C7D1E1;
+}
+
+#kontaktForma{
+	border: 2px solid #8D7453;
+	border-radius: 25px;
+	width: 300px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 10px 10px 5px 5px #D3D3D3;
+	padding: 20px 20px 20px 20px;
+	background: url(../images/bgkontakt.jpg);
+
+}
+
+#kontaktTabela input{
+	border-radius: 25px;
+	text-align: center;
+	color: #8D7453;
+
+}
+
+.ico{
+	width: 30px;
+	height: 30px;
+}
+
+.links{
+
+	width: 60px;
+	height: 60px;
+}
+
+
+#exls{
+	
+	text-align: center;
+	width: 70px;
+}
+
+#koment{
+	
+	text-align: center;
+	max-width: 170px;
+	display: block;
+	margin:0 auto;
+	overflow: scroll;
+}
+
+.spejs{
+	height: 100px;
+}
+
+.links:hover{
+	width: 45px;
+	height: 45px;
+	-webkit-transition: margin 0.3s, height 0.3s;
+    -moz-transition: margin 0.3s, height 0.3s;
+    -o-transition: margin 0.3s, height 0.3s;
+     transition: margin 0.3s, height 0.3s
+}
+
+
+#oMeni{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#oMeni h3{
+	font-size: 20px;
+	text-align: center;
+}
+
+#oMeni article{
+	color: #8D7453;
+	background: #E1D7C7;
+	border: 2px solid #8D7453;
+	border-radius: 25px;
+	box-shadow: 10px 10px 5px 5px #D3D3D3;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#disa{
+	height: 25%;
+	width: 25%;
+	float: left;
+	padding: 10px 10px 10px 10px;
+}
+
+.slike{
+	height: 25%;
+	width: 25%;
+	float: right;
+	padding: 10px 10px 10px 10px;
+
+}
+
+#eksterniLinkovi{
+	list-style-type: none;
+}
+
+#eksterniLinkovi li a {
+	text-decoration: none;	
+	color: #8D7453;
+}
+
+
+#eksterniLinkovi li:hover{
+list-style-image: url('../images/ekslinkovi.png');
+
+}
+
+#logo{
+  height: 80px;
+  width: 100px;  
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+#text{
+  font-size: 17px;
+  font-family: sans;
+  color:#663300;
+  text-decoration: underline; 
+  padding-right:4px;
+
+}
+
+#kist{
+  width: 4px;
+	height: 0px;
+	border-top: 50px solid #663300;
+	border-left: 10px solid transparent;
+  border-radius: 4px 4px 0px 0px;
+  margin-top: -5px;
+  margin-right: 15px;
+  -ms-transform: rotate(25deg); 
+  -webkit-transform: rotate(25deg); 
+  transform: rotate(25deg);
+  float:right;
+}
+
+#suza{
+
+  margin-top: -18px;
+  margin-left: 62px;
+  width: 15px;
+  height: 20px;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform:rotate(-200deg);
+ 
+  background: #330066;
+
+}
+
+#suza:hover{
+  background:transparent;
+  
+}
+
+#zadatak{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+
+
+
+}
+
+#zadatak th{
+	text-align: center;
+	border: 1px solid black;
+	background: #E1D7C7;
+	font-family:Parisienne;
+	font-size: 25px;
+}
+
+
