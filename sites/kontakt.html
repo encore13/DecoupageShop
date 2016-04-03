@@ -4,7 +4,8 @@
 <head>
 	<title>Kontakt</title>
 	<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="../styles/index.css">
+	<link rel="stylesheet" type="text/css" href="../styles/index.css">
+	<script type="text/javascript" src="../scripts/validacija.js"></script>
 </head>
 <body>
 
@@ -84,16 +85,45 @@
 				</td>				
 			</tr>
 
+			<tr>
+				<td colspan="3">
+					<input id="licniPodaci" type="text" placeholder="Ime &amp; Prezime" onkeyup="imePrezimeValid()" required>
+				</td>
 
-			
+			</tr>
+
+			<tr>
+				<td colspan="3">
+					<input id="mail" type="email" placeholder="Email" onkeyup="emailValid()" required>
+				</td>
+			</tr>
+
+		
+
+			<tr>
+				<td colspan="3">
+					<input id="kontaktTelefon" type="tel" placeholder="Kontakt telefon" onkeyup="telValid()">
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="3">
+					<input id="kod" type="text" value="16495">
+				</td>
+			</tr>	
+
+			<tr>
+				<td colspan="3">
+					<input id="kodbox" type="text" placeholder="Unesite kod odozgo" onkeyup="multipleValid()">
+				</td>
+			</tr>	
 
 			<tr>
 				<td colspan="3">
 					<textarea id="koment" placeholder="Vaš komentar?"></textarea>
 				</td>				
 			</tr>
-
-			
+		
 
 			<tr>
 				<td></td>

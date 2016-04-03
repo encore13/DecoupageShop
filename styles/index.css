@@ -101,7 +101,7 @@ figure:nth-child(8) {
 
 .novosti article{
 	width: 30%;
-	height: 60%;
+	height: 400px;
 	float: left;
 	overflow: auto;
 	border: 5px ridge #8D7453;
@@ -113,15 +113,18 @@ figure:nth-child(8) {
 
 
 
+
+
 .novosti img{
 	height: 40%; 
 	width: 40%;
+	padding: 5px 5px 5px 5px;
 	float: right;
 }
 
 .novosti img:hover{
-	height: 60%;
-	width: 60%;
+	/*height: 60%;
+	width: 60%;*/
 	
 }
 
@@ -236,6 +239,47 @@ figure:nth-child(8) {
 	display: block;
 	margin:0 auto;
 	overflow: scroll;
+}
+
+#licniPodaci{
+	text-align: center;
+	margin:0 auto;
+	display: block;
+	width: 80%;
+}
+
+#mail{
+	text-align: center;
+	margin:0 auto;
+	display: block;
+	width: 80%;
+}
+
+#kontaktTelefon{
+	margin:0 auto;
+	text-align: center;
+	display: block;
+	width: 80%;
+}
+
+#kod{
+
+	margin:0 auto;
+	text-align: center;
+	display: block;
+	width: 80%;
+	font-family: Parisienne;
+	font-weight: bold;
+	font-size: 30px;
+	background: transparent;
+	border: none;	
+}
+
+#kodbox{
+	margin:0 auto;
+	
+	display: block;
+	width: 80%;
 }
 
 .spejs{
@@ -369,6 +413,40 @@ list-style-image: url('../images/ekslinkovi.png');
 	background: #E1D7C7;
 	font-family:Parisienne;
 	font-size: 25px;
+}
+
+
+.vrijeme{
+	padding-right: 15px;
+	margin-right: 5px;
+	color: #536C8D;
+	float: right;
+	bottom: 50px;
+	font-size: 12px;
+	background-image: url(../images/ticker.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 12px;
+	
+
+}
+
+.novost h3{
+
+	clear: both;
+}
+
+#opcije{
+	margin: 5px 5px 5px 5px;
+}
+
+
+#vecaSlika{
+	padding: 5px 5px 5px 5px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
 }
 
 
