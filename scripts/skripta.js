@@ -8,11 +8,12 @@ var sedmica_ms = h_ms * 30;
 function postaviDatum()
 {
 	var datumi = document.getElementsByClassName("vrijeme");
-	var dat = new Date();
 
-	/*Par datuma koji su pogodni za testiranje svih kategorija datuma traženih u zadatku.
+	/*var dat = new Date();
+
+	Par datuma koji su pogodni za testiranje svih kategorija datuma traženih u zadatku.
 	Uvijek će, bez obzira na vrijeme pregledanja ove zadaće od strane asistenta, u odnosu na trenutno vrijeme 
-	prikazati vrijeme potrebno za ispis konkretne kategorije (prije par sekundi/minuta/sati/dana/sedmica)*/
+	prikazati vrijeme potrebno za ispis konkretne kategorije (prije par sekundi/minuta/sati/dana/sedmica)
 	datumi[0].innerHTML = ispisiPoKategoriji(dat);
 	datumi[1].innerHTML = ispisiPoKategoriji(new Date(dat.getFullYear(), dat.getMonth(), dat.getDate(), dat.getHours(), dat.getMinutes()-generisiRandomBroj(2, 59), dat.getSeconds(), dat.getMilliseconds()));
 	datumi[2].innerHTML = ispisiPoKategoriji(new Date(dat.getFullYear(), dat.getMonth(), dat.getDate(), dat.getHours()-generisiRandomBroj(1, 23), dat.getMinutes(), dat.getSeconds(), dat.getMilliseconds()));
@@ -33,16 +34,33 @@ function postaviDatum()
 		var minuta = generisiRandomBroj(1, 60);
 		var sekunda = generisiRandomBroj(1, 60);
 		datumi[i].innerHTML = ispisiPoKategoriji(new Date(godina, mjesec, dan, sat, minuta, sekunda, 0));
-	}
+	}*/
+	for (var i = 0; i < datumi.length; i++)
+		datumi[i].innerHTML = ispisiPoKategoriji(datumi[i].innerHTML);
 
 }
 
 
 function ispisiPoKategoriji(datum)
 {
-	var trenutno = new Date();
-	var razlika = trenutno - datum;
 
+	var trenutno = new Date();
+	//PHP primljeni datum
+	datum = datum.trim();
+	var dan = datum.substr(0,2);
+	dan = Number(dan);
+	var mjesec = datum.substr(3,2);
+	mjesec = Number(mjesec) - 1;
+	var godina = datum.substr(6,4);
+	var sati = datum.substr(11,2);
+	sati = Number(sati);
+	var minute = datum.substr(14,2);
+	minute = Number(minute);
+	var sekunde = datum.substr(17,2);
+	sekunde = Number(sekunde);
+	datum = new Date(godina, mjesec, dan, sati, minute, sekunde, 0);
+	var razlika = trenutno - datum;
+	
 	if(razlika < s_ms)
 	{
 		return "Novost objavljena prije par sekundi.";
@@ -111,7 +129,7 @@ function formatirajSate(brojSati)
 function formatirajMinute(brojMinuta)
 {
 	var pomocni1 = [2, 3, 4, 22, 23, 24, 32, 33, 34, 42, 43, 44, 52, 53, 54];
-	var pomocni2 = [21, 31, 41, 51];
+	var pomocni2 = [1, 21, 31, 41, 51];
 	for (var i = 0; i < pomocni1.length; i++)
 		if(brojMinuta == pomocni1[i])
 			return " minute."
