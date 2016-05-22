@@ -4,8 +4,8 @@
 <head>
 	<title>Kontakt</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../styles/index.css">
-	<script type="text/javascript" src="../scripts/validacija.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="validacija.js"></script>
 </head>
 <body>
 
@@ -22,7 +22,7 @@
 		<table id="kontaktTabela">
 			<tr>
 				<td>
-					<img class="ico" src="../images/phone.png" alt="telefon">
+					<img class="ico" src="phone.png" alt="telefon">
 				</td>
 
 				<td>					
@@ -39,7 +39,7 @@
 			<tr>
 
 				<td>					
-					<img class="ico" src="../images/mail.png" alt="mail">
+					<img class="ico" src="mail.png" alt="mail">
 				</td>
 
 				<td>
@@ -69,17 +69,17 @@
 				<td id="exls" colspan="3">
 				
 					<a href="https://www.facebook.com/profile.php?id=100003902685218">
-						<img  class="links" src="../images/face.png" alt="face">
+						<img  class="links" src="face.png" alt="face">
 					</a>															
 					
 				
 					<a href="https://www.pinterest.com/adisadeljkic/handmade-by-adisa-decoupage/">
-						<img class="links" src="../images/pin.png" alt="pinterest">
+						<img class="links" src="pin.png" alt="pinterest">
 					</a>
 				
 				
 					<a href="https://vk.com/">
-						<img class="links" src="../images/vk.png" alt="vk">
+						<img class="links" src="vk.png" alt="vk">
 					</a>				
 										
 				</td>				

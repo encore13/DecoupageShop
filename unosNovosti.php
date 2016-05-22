@@ -11,7 +11,7 @@
 
 	function upisiUCSV()
 	{
-		$path = "../assets/novosti1.csv";
+		$path = "novosti1.csv";
 		$file = fopen($path, "a");
 		$naslov = $_POST["naslov"];		
 		$sadrzaj = $_POST["sadrzaj"];
@@ -37,14 +37,9 @@
 	{
 		upisiUCSV();
 		
+		header ("Location: index.php");
 
 	}
-
-
-
-	
-
-
 
 ?>
 
@@ -54,8 +49,8 @@
 <head>
 	<title>Unos novosti</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../styles/index.css">
-	<script type="text/javascript" src="../scripts/servisValidacija.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="servisValidacija.js"></script>
 </head>
 <body>
 
@@ -66,28 +61,27 @@
 		<li> <a href="kontakt.php"> Kontakt </a> </li>
 	</ul> 
 
-	<div id = "novost">		
+		
 
 
-		<form id="unosNovosti" method="post" action="unosNovosti.php">
-			<input type="text" name = "naslov" placeholder="Naslov novosti">
+		<form id="frmNovosti" method="post" action="unosNovosti.php">
+			<br>
+			<input class="novostTxtBox" type="text" name = "naslov" placeholder="Naslov novosti" required>
 			<br><br>
-			<textarea name = "sadrzaj" placeholder="Sadržaj novosti..." ></textarea> 
+			<textarea id="txtAreaSadrzaj" name = "sadrzaj" placeholder="Sadržaj novosti..." required ></textarea> 
 			<br><br>
-			<input type="text" name="linkSlike" placeholder="Link slike">
+			<input  class="novostTxtBox" type="text" name="linkSlike" placeholder="Link slike" required>
 			<br><br>
-			<input type="text" id="alpha2Code" placeholder="Dvoslovni kod države" name="kod" onblur="validacija()">
+			<input class="novostTxtBox" type="text" id="alpha2Code" placeholder="Dvoslovni kod države" name="kod" onblur="validacija()">
 			<br><br>
-			<input type="text" id="callingCodes" placeholder="Tel: +387XXYYYYYY(Y)" name="telBroj" onblur="validacija()">
+			<input class="novostTxtBox" type="text" id="callingCodes" placeholder="Tel: +387XXYYYYYY(Y)" name="telBroj" onblur="validacija()">
 			<br><br>
 			<input type="submit" id = "submitBtn" name = "sacuvaj" value="Sačuvaj novost" disabled="true">
-
-			
-
+			<br><br>
 			
 			
 
 		</form>
-	</div>
+	
 </body>
 </html>

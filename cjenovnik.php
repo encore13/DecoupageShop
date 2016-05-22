@@ -6,7 +6,7 @@
 <head>
 	<title>Cjenovnik</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../styles/index.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 

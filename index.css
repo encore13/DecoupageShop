@@ -98,6 +98,7 @@ figure:nth-child(8) {
 	margin-left: auto;
 	display: table;	
 	margin-top: 50px;
+	clear: both;
 }
 
 .novosti article{
@@ -204,7 +205,7 @@ figure:nth-child(8) {
 	margin-left: auto;
 	box-shadow: 10px 10px 5px 5px #D3D3D3;
 	padding: 20px 20px 20px 20px;
-	background: url(../images/bgkontakt.jpg);
+	background: url(bgkontakt.jpg);
 
 }
 
@@ -343,7 +344,7 @@ figure:nth-child(8) {
 
 
 #eksterniLinkovi li:hover{
-list-style-image: url('../images/ekslinkovi.png');
+list-style-image: url('ekslinkovi.png');
 
 }
 
@@ -424,7 +425,7 @@ list-style-image: url('../images/ekslinkovi.png');
 	float: right;
 	bottom: 50px;
 	font-size: 12px;
-	background-image: url(../images/ticker.png);
+	background-image: url(ticker.png);
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: 12px;
@@ -438,9 +439,13 @@ list-style-image: url('../images/ekslinkovi.png');
 }
 
 #opcije{
+	float: left;
 	margin: 5px 5px 5px 5px;
 }
-
+#filter{
+	float: left;
+	margin: 5px;
+}
 
 #vecaSlika{
 	padding: 5px 5px 5px 5px;
@@ -452,16 +457,89 @@ list-style-image: url('../images/ekslinkovi.png');
 
 
 #logpanel{
-	width: 50%;
+	margin: 5px;
+	text-align: right;
+	width: 45%;
 	float: right;
 }
+
+#logged{
+	float: right;
+	margin: 5px;
+	text-align: right;
+	width: 45%;
+}
+
+
+
 #user{
-	width: 10%;
+	width: 15%;
+	margin: 5px;
 }
 
 #pass{
-	width: 10%;
+	width: 15%;
+	margin: 5px;
 
+}
+
+#welcomeMsg{
+	
+	
+	margin: 5px;
+}
+#btnLogout{
+	margin: 5px;
+}
+
+#login{
+	width: 15%;
+	margin: 5px;
+}
+
+#newsPanel{
+	width: 40%;
+	margin: 10px;
+
+}
+
+#unosNovosti{
+	
+	float:left;
+	margin: 5px;
+}
+
+#sortOpcije{
+	float: left;
+}
+
+#frmNovosti{
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	text-align: center;
+	margin-top: 20px;
+	border: 2px solid #8D7453;
+	border-radius: 25px;
+	background: url(bgkontakt.jpg);
+	box-shadow: 10px 10px 5px 5px #D3D3D3;
+}
+.novostTxtBox{
+	border: 2px solid #8D7453;
+	border-radius: 25px;
+	text-align: center;
+	box-shadow: 5px 5px 2px 2px #D3D3D3;
+	width: 60%;
+}
+
+#txtAreaSadrzaj{
+	border: 2px solid #8D7453;
+	box-shadow: 5px 5px 2px 2px #D3D3D3;
+	border-radius: 5px;
+	width: 60%;
+	
+	text-align: center;
+	max-width: 90%;
 }
 
 
